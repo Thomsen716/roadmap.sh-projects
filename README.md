@@ -4,5 +4,5 @@ This repository contains front-end projects built by following the [roadmap.sh F
 
 ## Projects List
 
-[Single Page CV](https://roadmap.sh/projects/single-page-cv)
+[Single Page CV](https://roadmap.sh/projects/single-page-cv), 
 [Basic HTML Website](https://roadmap.sh/projects/basic-html-website)
