@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #111;
+  border: 2px solid #000;
+  min-height: 100vh;
+}
+
+/* ---Header---*/
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    color: rgb(15, 15, 15);
+    font-family: "Poppins", sans-serif;
+}
+
+.header-logo img {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.header-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+    font-size: 1rem;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ---Banner---*/
+.banner {
+    grid-column: 1 / -1;
+    font-size: 3rem;
+    margin-top: 10rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.banner-description {
+    grid-column: 1 / -1;
+    margin-bottom: 10rem;
+    font-size: 1.5rem;
+    
+    text-align: center;
+    font-family: "Poppins", cursive;
+}
+
+/* ---Project / Work / Education---*/
+#projects,
+#work-experience,
+#education {
+    border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 25px 30px;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr 1.4fr;
+}
+
+.project-list ul li {
+  padding: 12px 0;
+  border-bottom: 1px solid #000;
+}
+
+#education ul li {
+  margin-bottom: 6px;
+}
+
+#education p {
+  margin-bottom: 15px;
+}
+
+
+#work-experience article {
+  padding-bottom: 20px;
+  margin-bottom:20px;
+  border-bottom: 1px solid #000;
+}
+
+/* ---------- Reviews ---------- */
+#reviews {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 30px 40px;
+}
+ 
+#reviews h2 {
+  grid-column: 1 / -1;
+  
+}
+ 
+#reviews article {
+  min-width: 0;
+}
+
+#reviews br {
+  display: none;
+}
+ 
+#reviews fieldset {
+  height: 100%;
+  border: 2px solid #000;
+  border-radius: 12px;
+  padding: 20px;
+}
+ 
+#reviews fieldset p:first-child {
+  margin-bottom: 20px;
+}
+ 
+#reviews fieldset p:last-child {
+  color: #aaa;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 40px 0;
+}
+ 
+footer code {
+  font-family: "Poppins", cursive;
+  font-style: normal;
+}
+ 
