@@ -11,6 +11,14 @@ body {
   min-height: 100vh;
 }
 
+body.dark-theme {
+  color: #fff;
+}
+
+body.dark-theme a {
+  color: #fff;
+}
+
 /* ---Header---*/
 
 header {
@@ -21,6 +29,10 @@ header {
     color: rgb(15, 15, 15);
     font-family: "Poppins", sans-serif;
 }
+
+  body.dark-theme header {
+    color: #fff;
+  }
 
 .header-logo img {
     display: block;
@@ -35,6 +47,7 @@ header {
 
 nav {
     display: flex;
+  align-items: center;
     gap: 1rem;
     margin-left: auto;
     font-size: 1rem;
@@ -47,6 +60,22 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+nav button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+  padding: 0;
+}
+
+.theme-icon {
+  display: block;
+  width: 50px;
+  height: 50px;
 }
 
 /* ---Banner---*/
