@@ -4,10 +4,10 @@
     <!--Document Informations-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thomsen - Basic HTML Website</title >
+    <title>Thomsen - Basic HTML Website</title>
     <link rel="stylesheet" href="style.css" />
 
- <!--SEO Meta Tags-->
+    <!--SEO Meta Tags-->
     <meta name="author" content="Thomsen" />
     <meta
       name="description"
@@ -22,12 +22,15 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js"></script>
+  </head>
   <body>
-
     <!--Header-->
     <header>
       <div class="header-logo">
@@ -41,27 +44,37 @@
         <a href="projects.html">Projects</a>
         <a href="articles.html">Articles</a>
         <a href="contact.html">Contact</a>
+        <button onClick="skiftBaggrundsFarve()">
+          <img
+            src="knap.webp"
+            alt=""
+            width="30"
+            height="30"
+            class="menu-icon"
+          />
+        </button>
       </nav>
     </header>
 
     <main>
-          <!--Introduction/banner-->
-      <div class="banner"><h1>Frontend Developer</h1> </div>
-      <div class="banner-description"><p>html only with proper layout, no styling</p></div>
-    
+      <!--Introduction/banner-->
+      <div class="banner"><h1>Frontend Developer</h1></div>
+      <div class="banner-description">
+        <p>html only with proper layout, no styling</p>
+      </div>
 
       <section id="projects">
         <div class="project-header">
-        <h2>Projects</h2>
+          <h2>Projects</h2>
         </div>
         <div class="project-list">
-        <ul>
-          <li>HTML Only Portfolio</li>
-          <li>Calculator</li>
-          <li>Quiz App</li>
-          <li>Countdown Timer</li>
-          <li>Product Upcoming Page</li>
-        </ul>
+          <ul>
+            <li>HTML Only Portfolio</li>
+            <li>Calculator</li>
+            <li>Quiz App</li>
+            <li>Countdown Timer</li>
+            <li>Product Upcoming Page</li>
+          </ul>
         </div>
       </section>
 
@@ -90,7 +103,7 @@
           sessions.
         </p>
         <p>Courses i took:</p>
-        
+
         <ul>
           <li>Object Oriented Programming</li>
           <li>Data Structures and Algorithms</li>
