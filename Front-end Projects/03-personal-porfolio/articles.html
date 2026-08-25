@@ -1,33 +1,78 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!--SEO Meta Tags-->
+    <!-- Document information -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thomsen - Basic HTML website</title>
 
-    <meta name="author" content="Thomsen" />
-    <meta name="description" content="Showcase of all published articles" />
+    <title>Thomsen - Frontend Developer</title>
+
+    <!-- SEO -->
     <meta
-      name="keywords"
-      content="HTML, frontend developer, portfolio, web development, article"
+      name="description"
+      content="A personal portfolio website showcasing frontend development projects, work experience, education, and articles."
+    />
+    <meta name="author" content="Thomsen" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
     />
 
-    <!--Favicon-->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- JavaScript -->
+    <script src="darkmode.js" defer></script>
   </head>
+
   <body>
-    <header>
-      <div class="1">
-        <img src="logo.png" alt="" width="50" height="50" />
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-brand">
+        <img src="logo.png" alt="Thomsen logo" width="50" height="50" />
+
+        <span class="header-name">Thomsen</span>
       </div>
 
-      <nav>
-        <a href="index.html">Home</a> | <a href="projects.html">Projects</a> |
-        <a href="articles.html">Articles</a> |
+      <!-- Main navigation -->
+      <nav class="main-navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="articles.html">Articles</a>
         <a href="contact.html">Contact</a>
+
+        <button id="theme-switch">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e3e3e3"
+          >
+            <path
+              d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e3e3e3"
+          >
+            <path
+              d="M338.5-338.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
+            />
+          </svg>
+        </button>
       </nav>
-      <hr />
     </header>
     <main>
       <h1>Articles</h1>
@@ -58,9 +103,10 @@
         >
       </h2>
     </main>
-    <footer>
-      <br />
-      <code>&copy; All rights Reserved 2026</code>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>&copy; 2026 Thomsen. All rights reserved.</p>
     </footer>
   </body>
 </html>
